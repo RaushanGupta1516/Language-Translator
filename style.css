@@ -1,0 +1,138 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(3, 33, 53, 0.93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(10, 66, 116);
+    padding: 20px 0 40px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    overflow: hidden;
+}
+
+#entertext{
+    margin-left: 5px;
+    border: none;
+    outline: none;
+}
+
+#transtext{
+    margin-right: 5px;
+    border: none;
+    outline: none;
+}
+.text{
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+textarea{
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 7px;
+    color: black;
+    font-size:18px;
+    resize: none;
+}
+
+.langoptions{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    overflow: hidden;
+}
+
+.selectopt{
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+select{
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#translate{
+    background-color: black;
+    color: white;
+    height: 37px;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    
+}
+
+.hovereffect{
+    transition: all 0.2s linear;
+}
+
+.hovereffect:hover{
+  cursor: pointer;
+  transform: scale(120%);
+} 
+
+@media only screen and (max-width: 550px){
+
+    .container{
+        padding: 20px 10px 20px 10px;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+
+    }
+    textarea{
+        width: 100%;
+    }
+    #transtext{
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .container{
+        padding: 50px 10px 20px 10px;
+    }
+
+    .langoptions{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .selectopt{
+        width: 100%;
+        justify-content: space-around;
+    }
+}

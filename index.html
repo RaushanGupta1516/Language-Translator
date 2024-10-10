@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="text">
+        <textarea name="t1" id="entertext" placeholder="Enter Text" rows="9" cols="22" spellcheck="false"></textarea>
+        <textarea name="t2" id="transtext" placeholder="Translated Text" readonly rows="9" cols="22"  spellcheck="false"></textarea>
+    </div>
+    <div class="langoptions">
+       <div class="selectopt">
+        <img class="hovereffect" id="mikefrom" src="mike.svg" alt="mike" height="18px">
+        <img class="hovereffect" id="copyfrom"  src="copy.svg" alt="copy"  height="18px">
+        <select >
+        </select>
+       </div>
+
+       <div class="selectopt">
+        <img class="hovereffect"  id="miketo" src="mike.svg" alt="mike"  height="18px">
+        <img class="hovereffect" id="copyto" src="copy.svg" alt="copy"  height="18px">
+        <select >
+        </select>
+       </div>
+
+    </div>
+    <button class="hovereffect" id="translate">Translate</button>
+
+  </div>
+
+<script src="language.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
